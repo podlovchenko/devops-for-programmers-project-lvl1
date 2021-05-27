@@ -23,5 +23,8 @@ extends:
 
 rules:
   no-console: 0
-  no-unused-vars: 0
+  no-unused-vars:
+    - 2
+    - args: after-used
+      argsIgnorePattern: "^_"
 
