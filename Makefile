@@ -1,6 +1,3 @@
-server:
-	npx nodos server
-
 test:
 	docker run podlovchenko/devops-for-programmers-project-lvl1 npx jest
 

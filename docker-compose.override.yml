@@ -7,6 +7,8 @@ services:
       - "443:443"
     volumes:
       - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
     depends_on:
       - app
       
@@ -20,3 +22,7 @@ services:
       - .:/app
       - /app/node_modules
     command: npm start
+    
+volumes:
+  caddy_data:
+  caddy_config:
