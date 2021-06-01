@@ -1,8 +1,11 @@
+server:
+	npx nodos server -h 0.0.0.0
+
 test:
-	docker run podlovchenko/devops-for-programmers-project-lvl1 npx jest
+	npx jest
 
 lint:
-	docker run podlovchenko/devops-for-programmers-project-lvl1 npx eslint . --fix
+	npx eslint . --fix
 
 compose-build:
 	docker-compose build
